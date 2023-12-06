@@ -45,12 +45,11 @@
                 msg.innerHTML="";
                 let value =document.getElementById("input").value;
         try { 
-            if(value.trim()=="")throw"ما أنت مدخلتش حاجة يا ولد";
-            if(isNaN(value)) throw"الي دخلته مش رقم يا ولد";
+           if(value.trim()=="")throw"You Enterd Nothing!! ";
+            if(isNaN(value)) throw"It is not a Number!!";
              value=Number(value);
-            if(value>5) throw "الي دخلته اكبر من 5 يا ولد";
-            if (value<5) throw"الي دخلته أقل من 5 يا ولد";
-        
+            if(value>5) throw "The Number is more than 5";
+            if (value<5) throw"The Numer is less than 5";
         } catch  (err) {
             msg.innerHTML=""+err;
         }
